@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #060116;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 15vh;
+  left: 5vw;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  bottom: 15vh;
+  right: 15vw;
+  width: 18vw;
+  height: 18vw;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*     FORM      */
+
+form {
+  width: 28%;
+  min-width: 300px;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  position: relative;
+}
+
+.main-title-box {
+  color: royalblue;
+  font-family: ubuntu;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: arial;
+  padding: 0.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.input-group input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.input-success input {
+  color: rgb(26, 185, 26);
+  border: 2px solid rgb(26, 185, 26);
+}
+
+.input-error input {
+  color: red;
+  border: 2px solid red;
+}
+
+.submit-wrapper,
+.submit-wrapper button {
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+}
+.submit-wrapper button {
+  padding: 0.25rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    rgb(7, 158, 245),
+    rgb(190, 8, 245)
+  );
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-wrapper button:hover {
+  transform: scale(1.1);
+}
+
+small {
+  color: red;
+  margin-top: 0.1rem;
+}
