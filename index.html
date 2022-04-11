@@ -1,81 +1,65 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- registration form -->
 
     <form action="#" id="form">
+      <div class="main-title-box">
+        <h1>Registration Form</h1>
+      </div>
 
+      <!-- USERNAME -->
 
-        <div class="main-title-box">
-            <h1>Registration Form</h1>
-        </div>
+      <div class="input-group">
+        <label for="name">Username</label>
+        <input type="text" id="name" />
+        <small></small>
+      </div>
 
-        <!-- USERNAME -->
+      <!--EMAIL -->
 
-        <div class="input-group">
-            <label for="name">Username</label>
-            <input type="text" id="name">
-            <small></small>
-        </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+        <small></small>
+      </div>
 
-        <!--EMAIL -->
+      <!-- MOBILE NUMBER -->
 
-        <div class="input-group">
-            <label for="email">Email</label>
-            <input type="email" id="email">
-            <small></small>
-        </div>
+      <div class="input-group">
+        <label for="number">Number</label>
+        <input type="number" id="number" class="input-success" />
+        <small></small>
+      </div>
 
+      <!-- PASSWORD -->
 
-        <!-- MOBILE NUMBER -->
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+        <small></small>
+      </div>
 
-        <div class="input-group">
-            <label for="number">Number</label>
-            <input type="number" id="number" class=" input-success">
-            <small></small>
-        </div>
+      <!-- CONFIRM PASSWORD -->
 
+      <div class="input-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" />
+        <small></small>
+      </div>
 
-
-        <!-- PASSWORD -->
-
-
-        <div class="input-group">
-            <label for="password">Password</label>
-            <input type="password" id="password">
-            <small></small>
-        </div>
-
-
-        <!-- CONFIRM PASSWORD -->
-
-
-        <div class="input-group">
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password">
-            <small></small>
-        </div>
-
-
-
-        <div class="submit-wrapper">
-            <button type="submit" id="submit">Submit</button>
-        </div>
-
-
-
-
+      <div class="submit-wrapper">
+        <button type="submit" id="submit">Submit</button>
+      </div>
     </form>
-
 
     <!-- adding script -->
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
